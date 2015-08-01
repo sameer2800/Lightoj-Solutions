@@ -44,6 +44,19 @@ dp[i] = min(dp[i],1+ dp[j])
 check the solution for better understanding.
 
 
+solution 1116:
+
+pretty simple problem 
+
+only even numbers can be written as product of an even number and other number.
+ex :  6=  2* 3 
+so for every even number, 
+first take m =2, n = number/m 
+if(n is not odd) then make m = m*2
+and continue the loop ,till we find n as odd number.
+
+
+
 
 
 
