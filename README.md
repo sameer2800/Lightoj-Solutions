@@ -29,5 +29,22 @@ if bob takes first : 1 2 3 4 5 6 7 8 9
 W - stands for winning , L stands for loosing and number represents 
 number of marbles present.
 
+solution 1087 :
+
+size of each group atleast can be 3.
+recursively take  groups of size greater than 2 (3,4,5....) for each curr
+if possible.
+
+dp[i] represents minimum number of groups can form starting from i to the last .
+dp[0] gives us solution.
+
+for(j = i+2 to n)
+dp[i] = min(dp[i],1+ dp[j])
+
+check the solution for better understanding.
+
+
+
+
 
 
