@@ -29,6 +29,37 @@ if bob takes first : 1 2 3 4 5 6 7 8 9
 W - stands for winning , L stands for loosing and number represents 
 number of marbles present.
 
+
+solution 1078 :
+
+we need to find minimum length of a string that contains only 'X' and that 
+string should be divisible by 'K' and this is possible for every K such that
+k % 2 != 0 and k %5 != 0.
+
+we are given k and X.
+now take temp =X , length = 1,mul = 10
+
+while(temp % k != 0)
+	temp += X*mul
+	length++;
+	mul *= 10
+
+as value of temp can be greater than max value of int, we should think in a better way.
+now instead of maintaining temp, maintain temp % k.
+for example, k =111, X =3
+111 % 3 =( 100 % 3 + 11 % 3) % 3
+take another variable namely mod = X % k
+
+while(mod != 0)
+	mod = (X*mul % k + mod )% k
+	length++
+	mul = (mul *10) % k
+
+length gives us the result
+
+	
+
+
 solution 1087 :
 
 size of each group atleast can be 3.
