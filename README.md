@@ -86,9 +86,16 @@ first take m =2, n = number/m
 if(n is not odd) then make m = m*2
 and continue the loop ,till we find n as odd number.
 
+Solution 1117 :
 
+	category : Set inclusive and exclusive principle.
 
+	count all the numbers which are present below 'n' and divisible by given numbers.for doing
+	this ,use set union formula. 
 
+	i used a recursive function which finds all subsets of given array , and in each subset count
+	number of bits set and if it is odd ,  add to our solution else substract it.
 
+	finally ans contains all numbers counted in this way and our final answer is n - ans.
 
 
