@@ -1,6 +1,6 @@
-# lightoj-epic-solutions
+#lightoj-epic-solutions
 
-solution 1007 :
+##solution 1007 :
 
 based on Euler totient function.
 here dp[i] represents number of relative primes of ith number
@@ -16,7 +16,7 @@ if its not,
 
 	(just think how can we got above 2 equations)
 
-solution 1020 :
+##solution 1020 :
 
 A simple problem based on number theory,if Alice takes first :
 
@@ -30,7 +30,7 @@ W - stands for winning , L stands for loosing and number represents
 number of marbles present.
 
 
-solution 1078 :
+##solution 1078 :
 
 we need to find minimum length of a string that contains only 'X' and that 
 string should be divisible by 'K' and this is possible for every K such that
@@ -60,7 +60,7 @@ length gives us the result
 	
 
 
-solution 1087 :
+##solution 1087 :
 
 size of each group atleast can be 3.
 recursively take  groups of size greater than 2 (3,4,5....) for each curr
@@ -75,7 +75,13 @@ dp[i] = min(dp[i],1+ dp[j])
 check the solution for better understanding.
 
 
-solution 1116:
+##solution 1113 :
+
+yo..use two stacks and do the operations as they are saying.	
+stl stack minimized my work.
+
+
+##solution 1116:
 
 pretty simple problem 
 
@@ -86,8 +92,16 @@ first take m =2, n = number/m
 if(n is not odd) then make m = m*2
 and continue the loop ,till we find n as odd number.
 
+##solution 1119 :
 
+	bitmask dynamic programming.
 
+	generate all permutations of each subset of the given elements. 
+
+	dp[i] = write i in bit format ,find number of bits set to 1. and calculate
+	sum of these respective elements.  
+
+	once we reach the condition of all bits set ,  break out of the function.
 
 
 
