@@ -92,7 +92,7 @@ first take m =2, n = number/m
 if(n is not odd) then make m = m*2
 and continue the loop ,till we find n as odd number.
 
-<<<<<<< HEAD
+
 ##solution 1119 :
 
 	bitmask dynamic programming.
@@ -103,18 +103,32 @@ and continue the loop ,till we find n as odd number.
 	sum of these respective elements.  
 
 	once we reach the condition of all bits set ,  break out of the function.
-=======
-Solution 1117 :
+
+##Solution 1117 :
 
 	category : Set inclusive and exclusive principle.
 
-	count all the numbers which are present below 'n' and divisible by given numbers.for doing
-	this ,use set union formula. 
->>>>>>> 908a715410c3f19c740be0c53f054d99eaa1fecf
+	count all the numbers which are present below 'n' and divisible by given
+	 numbers.for doing this ,use set union formula. 
 
-	i used a recursive function which finds all subsets of given array , and in each subset count
-	number of bits set and if it is odd ,  add to our solution else substract it.
+	i used a recursive function which finds all subsets of given array , and 
+	in each subset count number of bits set and if it is odd ,add to our solution
+	 else substract it.
 
 	finally ans contains all numbers counted in this way and our final answer is n - ans.
+
+
+##Solution 1123 :
+
+	category : minimum spanning tree
+
+	A good problem on this topic. I used prim's algorithm for constructing 
+	the tree. if graph is not connected ,print -1 . Run a prims algorithm ,
+	once we can travel every node to every other node. 
+
+	After this, for each edge , construct the tree again on the previous built 
+	 tree which contains n-1 edges exactly. instead of building from scatch again.
+	 In this way, compexity can be well reduced.
+
 
 
