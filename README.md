@@ -131,4 +131,17 @@ and continue the loop ,till we find n as odd number.
 	 In this way, compexity can be well reduced.
 
 
+##Solution 1124 :
+  
+  category : Set inclusion and exclusion
 
+  x1 + x2 +x3 + ....xr = n
+
+  here each ai <=  xi <= bi . Distributing n identical objects among r groups with limits on each group. Every group must have a1 objects ,so fill all the groups with corresponding ai. Now,
+  we are left with  n - (a1 + a2 + a3+ ...ar).  
+  So, our new update is 0 <= xi <= bi-ai. 
+  Distribute these objects among R groups with formula 
+  C(N1 + r -1,r-1 )  where N1 is new n.
+  So,from this we need to remove all the cases where each xi > bi-ai .
+  For doing this,generate all 2 ^r subsets .
+  
