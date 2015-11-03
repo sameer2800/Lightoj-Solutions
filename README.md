@@ -144,4 +144,19 @@ and continue the loop ,till we find n as odd number.
   C(N1 + r -1,r-1 )  where N1 is new n.
   So,from this we need to remove all the cases where each xi > bi-ai .
   For doing this,generate all 2 ^r subsets .
-  
+
+##Solution 1125 :
+
+	category : DP
+
+	dp[i][j][k] represents "from i elements take j elements and sum of these elements modulo 'b' is k and also ith element is last included".
+    
+	for(temp is 0 to i-1)
+	if(k > a[i])
+		dp[i][j][k] +=  dp[temp][j-1][k-a[i]] ; 
+	else
+		dp[i][j][k]  += dp[temp][j-1][k-a[i] + b];
+
+	to minimize complexity ,do some precomputations.
+
+			
