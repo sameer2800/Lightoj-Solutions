@@ -159,4 +159,19 @@ and continue the loop ,till we find n as odd number.
 
 	to minimize complexity ,do some precomputations.
 
-			
+##Solution 1127 :
+	
+	category : bisection and binary search
+
+	basically the idea is we need to get the sums  of all the subsets of the array and count no of sums which are lesser than the given weight. 
+	max size of array is 30 . to generate all subsets, complexity will be O(2^ 30) which cross limits.
+
+	to minimize this, find sums of all subsets of first half numbers .
+	(complexity is O(2^15)) .
+	store all these values inside a vector and sort them.
+	now, generate sums of second half numbers which is again O(2 ^ 15). 
+	then ,for each subset sum of second generated numbers , find number of all elements 
+	in the first set such that total sum weight <= given weight .
+	use vector upper bound for this .
+
+	total complexity : O((2 ^ n/2 )*log n )
