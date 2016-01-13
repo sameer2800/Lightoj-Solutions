@@ -175,3 +175,12 @@ and continue the loop ,till we find n as odd number.
 	use vector upper bound for this .
 
 	total complexity : O((2 ^ n/2 )*log n )
+
+##Solution 1129 :
+	problem is to check presence of any string that is prefix to
+	any other string of the given input.
+	the idea is to use a trie tree . whenever we insert a new 
+	string in the trie , check whether is it a prefix ,or  this 
+	contains  any other prefixes.
+	Take a variable in each node which marks only leaf nodes.
+	now , start thinking from here !!!!!
