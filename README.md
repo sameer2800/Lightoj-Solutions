@@ -184,3 +184,30 @@ and continue the loop ,till we find n as odd number.
 	contains  any other prefixes.
 	Take a variable in each node which marks only leaf nodes.
 	now , start thinking from here !!!!!
+
+##Solution 1131 :
+	
+	problem is to find f(n) and g(n) .
+	if n < 10^6 , we could have simply solved by using DP. but n value ranges upto 2 ^31 
+	which is around 10 ^10 , we used technique called matrix exponentation. 
+
+		fn =     |       |   fn-1
+		fn-1 =   |       |   fn-2 
+		fn-2 =   |       | 	 fn-3		
+		gn =     |   M   | * gn-1
+		gn-1=    |       | 	 gn-2
+		gn-2 =   |       |   gn-3
+
+		M is the coefficient Matrix here. 
+		To find fn in terms of known variables, expand rhs again and again.
+		and finally ,we obtain solution
+		 fn =    |       |^(n-2)    f2
+		fn-1 =   |       |          f1 
+		fn-2 =   |       | 	        f0		
+		gn =     |   M   |      *   g2
+		gn-1=    |       | 	        g1
+		gn-2 =   |       |          g0
+
+		Matrix power can be done in log(n) time.
+		So complexity will be ((M.rows)^3 )*log(n).
+
