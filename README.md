@@ -211,3 +211,12 @@ and continue the loop ,till we find n as odd number.
 		Matrix power can be done in log(n) time.
 		So complexity will be ((M.rows)^3 )*log(n).
 
+##Solution 1134 :
+	
+	count no of substrings in an array which sum is a multiple of M.
+	create another array where 
+		arr[i] = (arr[i-1] + input[i] ) % m;
+	which is basically adding the sum upto it modulo m. then count number of 
+	pairs of equal numbers. bcoz we recieve the same number again in that array
+	only when the sum of in between elements are divisible by m.
+	complexity is O(N).	
