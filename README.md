@@ -219,4 +219,21 @@ and continue the loop ,till we find n as odd number.
 	which is basically adding the sum upto it modulo m. then count number of 
 	pairs of equal numbers. bcoz we recieve the same number again in that array
 	only when the sum of in between elements are divisible by m.
-	complexity is O(N).	
+	complexity is O(N).
+
+##Solution 1233 :
+
+	this one is a good dp problem.I  Built the solution from bottom up manner.
+	there are M places and count how many places can we obtain with the given
+	coins. 
+	what we do is start iterating the array with each coin. make the array 
+	value 1,if this value is obtainable. i.e dp[i] =1.
+	And at each step ,count the number of same coins used to get this value in
+	count[i].
+		dp[0] = 1 // coz zero means no coins in hand ,which is possible
+		for coin j, 
+
+			dp[i] = 1 , only when dp[i-j] = 1 and count[i-j]+1 < available_coins[j]	
+
+	iterate the array in similar fashion for each coin.		
+
