@@ -221,6 +221,24 @@ and continue the loop ,till we find n as odd number.
 	only when the sum of in between elements are divisible by m.
 	complexity is O(N).
 
+##Solution 1135 :
+	
+	segment trees with lazy propagation . first u need to learn the implementation
+	of lazy propagation with segment trees.this one is a good example of that.
+
+##Solution 1137 :
+	
+	this is an interesting one. there are 2 variables to be find out to get the
+	solution .
+		r*theta = length of segment (which is known)
+
+	theta varies from 0 to PI/2 . So do binary search on theta and find out radius.
+
+	chord length is given and compare this length with our new chord every time.
+	new chord = r*sin(theta)
+
+	once we find out theta, ans will be r -r*cos(theta).
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
