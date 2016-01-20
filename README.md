@@ -239,6 +239,12 @@ and continue the loop ,till we find n as odd number.
 
 	once we find out theta, ans will be r -r*cos(theta).
 
+##Solution 1138  :
+
+	binary search. Just think in that way , u will get the solution.
+	Only see my solution,if u are unable to solve it.
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
