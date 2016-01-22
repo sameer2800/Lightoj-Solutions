@@ -319,6 +319,18 @@ and continue the loop ,till we find n as odd number.
  	fill everything recursively .
  	dp[0][0] gives us the solution.
 
+##Solution 1158 :
+	
+	category : bitmasking with dp.
+
+##Solution 1159 :	
+	
+	dynamic programming .
+
+	lcs[i][j][k] = lcs[i-1][j-1][k-1] + 1  , when a[i] == b[j] == c[k]
+	else
+	lcs[i][j][k] = max(lcs[i-1][j][k],lcs[i][j-1][k],lcs[i][j][k-1]);
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
