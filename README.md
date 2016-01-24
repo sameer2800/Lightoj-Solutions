@@ -244,6 +244,10 @@ and continue the loop ,till we find n as odd number.
 	binary search. Just think in that way , u will get the solution.
 	Only see my solution,if u are unable to solve it.
 
+##Solution 1141 :
+	
+	typical bfs solution.
+
 
 ##Solution 1233 :
 
