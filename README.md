@@ -2,7 +2,7 @@
 
 ##solution 1007 :
 
-based on Euler totient function.
+based  on  Euler totient function.
 here dp[i] represents number of relative primes of ith number
 first mark all prime numbers, now for each number 
 if 'i' is a prime number: dp[i] = i-1 (one can think)
@@ -249,6 +249,15 @@ and continue the loop ,till we find n as odd number.
 	typical bfs solution.
 
 
+##Solution 1142 :
+	
+	f(2x) =   A + A^2 + A^3+....+ A^x + ...+ A^2x
+		  =>  A+ A^2+ A^3+ ....+ A^X + A^x(A+ A^2+.....A^x)   	
+		  => (A+ A^2+....A^x)(I + A^x)
+	f(2x) = f(x)(I+A^(x/2));  
+	f(2x+1) => f(2x) + A^x;
+
+		  
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
