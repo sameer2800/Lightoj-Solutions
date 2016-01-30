@@ -331,6 +331,16 @@ and continue the loop ,till we find n as odd number.
 	else
 	lcs[i][j][k] = max(lcs[i-1][j][k],lcs[i][j-1][k],lcs[i][j][k-1]);
 
+##Solution 1161 :
+	
+	inclusion , exclusion .
+
+	max numbers : 10000 
+	we need to find all the 4-tuples whose gcd is 1 .
+	idea is to count 4tuples having gcd 2, gcd 3, gcd 4, .....
+
+	so , gcd (1) = nC4 - {gcd2 + gcd 3 + gcd 4 + gcd 5 ......} 
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
