@@ -279,6 +279,19 @@ and continue the loop ,till we find n as odd number.
 		time complexity : O(N*S)
 		memory complexity : O(2*S)
 
+##Solution 1149:
+
+	Goal is to minimize the total population. 
+	count all the similar numbers in an array .suppose N= 3, and 
+	their values are 2 2 2 , we could say that there are only 3 people
+	all belongs to same team. and suppose when N = 5, and values are
+	2 2 2 2 2 ,ans is 3+3 because 2 2 2 come under 1st set and the other
+	 2 2 into another set.
+
+	 similarly count all values from 0 to 10^6.
+	 complexity : O(10^6). 
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
