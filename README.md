@@ -350,6 +350,13 @@ and continue the loop ,till we find n as odd number.
 
 	lazy propagation with segment tree
 
+##Solution 1166 :
+	
+	greedy , dfs
+
+	for every misplaced number ,write dfs to find where the number is 
+	appearing and count this values.
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
