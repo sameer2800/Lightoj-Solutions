@@ -2,7 +2,7 @@
 
 ##solution 1007 :
 
-based on Euler totient function.
+based  on  Euler totient function.
 here dp[i] represents number of relative primes of ith number
 first mark all prime numbers, now for each number 
 if 'i' is a prime number: dp[i] = i-1 (one can think)
@@ -220,6 +220,77 @@ and continue the loop ,till we find n as odd number.
 	pairs of equal numbers. bcoz we recieve the same number again in that array
 	only when the sum of in between elements are divisible by m.
 	complexity is O(N).
+
+##Solution 1135 :
+	
+	segment trees with lazy propagation . first u need to learn the implementation
+	of lazy propagation with segment trees.this one is a good example of that.
+
+##Solution 1137 :
+	
+	this is an interesting one. there are 2 variables to be find out to get the
+	solution .
+		r*theta = length of segment (which is known)
+
+	theta varies from 0 to PI/2 . So do binary search on theta and find out radius.
+
+	chord length is given and compare this length with our new chord every time.
+	new chord = r*sin(theta)
+
+	once we find out theta, ans will be r -r*cos(theta).
+
+##Solution 1138  :
+
+	binary search. Just think in that way , u will get the solution.
+	Only see my solution,if u are unable to solve it.
+
+##Solution 1141 :
+	
+	typical bfs solution.
+
+
+##Solution 1142 :
+	
+	f(2x) =   A + A^2 + A^3+....+ A^x + ...+ A^2x
+		  =>  A+ A^2+ A^3+ ....+ A^X + A^x(A+ A^2+.....A^x)   	
+		  => (A+ A^2+....A^x)(I + A^x)
+	f(2x) = f(x)(I+A^(x/2));  
+	f(2x+1) => f(2x) + A^x;
+
+##Solution 1145 :
+
+		dynamic programming .
+		n dices,each range from 1 to k , sum should be S.
+		dp[n][S] => number of ways of arranging n dices which give sum S.so,for the
+		last dice possible values are 1 to k .
+		suppose , if nth dice has value 1,
+		dp[n][S] = dp[n-1][s-1] ,which is arranging n-1 dices with sum s-1.
+		similarly , if nth dics got value 2,    
+		dp[n][S] = dp[n-1][s-2] ,which is arranging n-1 dices with sum s-2.
+		.
+		.
+		.upto k for nth dice.
+
+		so, dp[n][S] = dp[n-1][s-1] + dp[n-1][s-2] + dp[n-1][s-3]+....+dp[n-1][s-k]
+
+		we have to calculate this sum in O(1) time ,so we store this sum in temp array.and for calculating nth index , we require only n-1th index values. so, we 
+		are not required to store all the n-2 index values.
+
+		time complexity : O(N*S)
+		memory complexity : O(2*S)
+
+##Solution 1149:
+
+	Goal is to minimize the total population. 
+	count all the similar numbers in an array .suppose N= 3, and 
+	their values are 2 2 2 , we could say that there are only 3 people
+	all belongs to same team. and suppose when N = 5, and values are
+	2 2 2 2 2 ,ans is 3+3 because 2 2 2 come under 1st set and the other
+	 2 2 into another set.
+
+	 similarly count all values from 0 to 10^6.
+	 complexity : O(10^6). 
+
 
 ##Solution 1233 :
 
