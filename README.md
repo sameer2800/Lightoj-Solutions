@@ -279,7 +279,7 @@ and continue the loop ,till we find n as odd number.
 		time complexity : O(N*S)
 		memory complexity : O(2*S)
 
-##Solution 1149:
+##Solution 1148:
 
 	Goal is to minimize the total population. 
 	count all the similar numbers in an array .suppose N= 3, and 
@@ -291,6 +291,33 @@ and continue the loop ,till we find n as odd number.
 	 similarly count all values from 0 to 10^6.
 	 complexity : O(10^6). 
 
+##Solution 1149: 
+	
+	find the  maximum bipartite matching of the graph after connecting
+	to source and destination . i used ford fulkerson algorithm for implem
+	enting the above said .
+
+##Solution 1157:
+
+	find the lcs array in following way :
+	lcs[i][j] = longest common subsequence of two strings in which a starts
+	with 'i' and b starts with 'j'.
+
+	lcs[0][0] gives the solution .
+
+	dp[i][j] = number of distinct lcs , a starts with i and b with j. 
+
+	find the first occurrence of all alphabets in both strings for each postion . // precompute them .
+
+	dp[i][j] : 
+	all distinct subsequences having lcs[i][j] .
+	count all
+	=> subsequences starts with 'a'
+ 	=> subsequences starts with 'b'
+ 	..... 
+
+ 	fill everything recursively .
+ 	dp[0][0] gives us the solution.
 
 ##Solution 1233 :
 
