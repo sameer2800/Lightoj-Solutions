@@ -346,6 +346,10 @@ and continue the loop ,till we find n as odd number.
 	 hint : pattern search by generating 'a-b' for every a starts from
 	 1 .one can easily notice a pattern.
 
+##Solution 1164 :
+
+	lazy propagation with segment tree
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
