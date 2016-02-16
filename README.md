@@ -341,6 +341,11 @@ and continue the loop ,till we find n as odd number.
 
 	so , gcd (1) = nC4 - {gcd2 + gcd 3 + gcd 4 + gcd 5 ......} 
 
+##Solution 1163 :
+	
+	 hint : pattern search by generating 'a-b' for every a starts from
+	 1 .one can easily notice a pattern.
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
