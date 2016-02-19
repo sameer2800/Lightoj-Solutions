@@ -357,6 +357,18 @@ and continue the loop ,till we find n as odd number.
 	for every misplaced number ,write dfs to find where the number is 
 	appearing and count this values.
 
+##Solution 1168 :
+
+	category : scc 
+	algorithm : tarzan's algorithm .
+
+	find all the scc in the graph by using tarzans algorithm then for
+	every scc find number of outgoing edges other than internal nodes.
+	if any scc contains 2 or more outgoing edges we cannot have a single
+	path .	
+
+	complexity : tarzan algo is mainly dfs and which is O(V+E). 
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
