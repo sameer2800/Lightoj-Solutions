@@ -369,6 +369,12 @@ and continue the loop ,till we find n as odd number.
 
 	complexity : tarzan algo is mainly dfs and which is O(V+E). 
 
+##Solution 1169 :
+
+	category : dp
+
+	pretty simple when you are strong with dp.
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
