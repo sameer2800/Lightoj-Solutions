@@ -375,6 +375,23 @@ and continue the loop ,till we find n as odd number.
 
 	pretty simple when you are strong with dp.
 
+##solution 1170 :
+
+	catalan numbers,dynamic programming, upperbound ,lowerbound
+
+	generate all perfect numbers below 1e10. start from 2 to 1e5 .easily 
+	done in 1 sec. 
+
+	now for each query,find out number of perfect numbers by using upper
+	and lowerbounds. 
+
+	dp[i] =  number of bsts of size i .
+
+	dp[i] = dp[j] * dp[j-i-1] for 1 < j< i.	which is O(n^2) .
+	catalan numbers does the same , // google catalan numbers.
+	dp[i] = C(i) = 1/2n+1 C(2n,n). which work in O(N).
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
