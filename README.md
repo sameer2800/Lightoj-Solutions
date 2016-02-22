@@ -391,6 +391,13 @@ and continue the loop ,till we find n as odd number.
 	catalan numbers does the same , // google catalan numbers.
 	dp[i] = C(i) = 1/2n+1 C(2n,n). which work in O(N).
 
+##Solution 1173 :
+
+	dynamic programming .
+	although my solution dint get accepted , i m sure about my
+	approach  :p. 
+	read this  :  http://lbv-pc.blogspot.in/2012/09/the-vindictive-coach.html
+
 
 ##Solution 1233 :
 
