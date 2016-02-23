@@ -398,6 +398,11 @@ and continue the loop ,till we find n as odd number.
 	approach  :p. 
 	read this  :  http://lbv-pc.blogspot.in/2012/09/the-vindictive-coach.html
 
+##Solution 1174 :
+	
+	category : floyd warshall / dfs-bfs /prim	
+
+		
 
 ##Solution 1233 :
 
