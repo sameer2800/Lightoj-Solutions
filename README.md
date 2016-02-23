@@ -402,7 +402,12 @@ and continue the loop ,till we find n as odd number.
 	
 	category : floyd warshall / dfs-bfs /prim	
 
-		
+##Solution 1175 :
+
+	category : bfs
+
+	run the bfs twice, once from jane to every other location .
+	insert all the fire into the queue at once and then run the bfs again.		
 
 ##Solution 1233 :
 
