@@ -408,6 +408,18 @@ and continue the loop ,till we find n as odd number.
 
 	run the bfs twice, once from jane to every other location .
 	insert all the fire into the queue at once and then run the bfs again.		
+##Solution 1176 :
+
+	m guys ,6*n tshirts.
+	first m nodes are for m guys then next 6*n nodes  are for tshirts .
+	suppose 1st guy can wear XL ,M  ,there are n XL nodes and n M nodes.
+	so join the first guy node with all these 2*n nodes .similarly
+	build the graph for all the guys .
+	take a source and destination , connect source with m guys and
+	connect all 6*n nodes (tshirts) with destination and run bipartite
+	matching .
+
+
 
 ##Solution 1233 :
 
