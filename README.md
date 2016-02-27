@@ -670,6 +670,14 @@ and continue the loop ,till we find n as odd number.
 	After this, use dp array for memoization  and return the answer if it is already
 	visited. 	
 
+
+##Solution 1219:
+	
+	category : dfs and greedy
+
+	
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
