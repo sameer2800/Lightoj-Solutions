@@ -665,17 +665,24 @@ and continue the loop ,till we find n as odd number.
 		then we cannot take the next element.
 		dp(curr+1,0,first)	 
 
-	Attribute first is used when we reach the last element .
+	Attribute 'first' is used when we reach the last element .
 	
-	After this, use dp array for memoization  and return the answer if it is already
-	visited. 	
+	After this, use dp array for memoization  and return the answer if it is 
+	already visited. 	
 
 
 ##Solution 1219:
 	
 	category : dfs and greedy
 
-	
+
+##Solution 1220:
+
+	category : number theory
+
+	calculate all the non perfect numbers and insert them in an array. And for
+	each non perfect number , raise the power until the value lesser than 2^32
+	and store in map. similarly , go with negative numbers.  
 
 
 ##Solution 1233 :
