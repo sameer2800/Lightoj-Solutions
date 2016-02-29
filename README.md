@@ -561,7 +561,15 @@ and continue the loop ,till we find n as odd number.
 	neighbours shouldn't , and if a node is not present , all of its neighb
 	ours may or may present in the solution .
 
-	find out recurrence for the above idea and memoize it .that simple.		
+	find out recurrence for the above idea and memoize it .that simple.	
+
+##Solution 1202 :
+	
+	category : greedy
+
+	there can be only 3 solutions possible ,
+	1,2,impossible .
+
 
 ##Solution 1233 :
 
