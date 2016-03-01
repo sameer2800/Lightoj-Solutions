@@ -433,6 +433,12 @@ and continue the loop ,till we find n as odd number.
 	
 	segment trees, lazy propagation .we have done a lot . :p
 
+##solution 1185 :
+	
+	maximum bipartite matching ,
+	construct the graph by using the given conditions.then run mbm.
+
+
 
 ##Solution 1233 :
 
