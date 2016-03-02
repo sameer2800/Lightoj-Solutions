@@ -420,6 +420,11 @@ and continue the loop ,till we find n as odd number.
 	matching .
 
 
+##solution 1179 :
+	
+	joshepus problem , 
+	wikepedia has good explanation .search !!!
+
 
 ##Solution 1233 :
 
