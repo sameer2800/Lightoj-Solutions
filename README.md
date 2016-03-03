@@ -433,10 +433,23 @@ and continue the loop ,till we find n as odd number.
 	
 	segment trees, lazy propagation .we have done a lot . :p
 
-##solution 1185 :
+##solution 1184 :
 	
 	maximum bipartite matching ,
 	construct the graph by using the given conditions.then run mbm.
+
+##Solution  1186 :
+	
+	category : nim's game .
+
+	we know the general solution for situation like  :
+	suppose there are n piles and 2 players are playing , each can remove any number
+	of stones atleast 1 from only one pile at his chance , the last player who is
+	unable to remove looses . the solution for this is :
+
+	if xor of all piles are zero at any players chance, he looses .
+
+	similarily ,we can relate our problem to piles problem.in each step a player can move to any position until his oppostion's place. we can assume this as our size of the pile .  and apply xor similarly.
 
 
 
