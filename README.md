@@ -425,6 +425,14 @@ and continue the loop ,till we find n as odd number.
 	joshepus problem , 
 	wikepedia has good explanation .search !!!
 
+##Solution 1182 :
+
+	counted number of bits set by using __builtin_pop_count() function.
+
+##Solution 1183 :
+	
+	segment trees, lazy propagation .we have done a lot . :p
+
 
 ##Solution 1233 :
 
