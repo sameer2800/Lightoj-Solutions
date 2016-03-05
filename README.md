@@ -452,6 +452,24 @@ and continue the loop ,till we find n as odd number.
 	similarily ,we can relate our problem to piles problem.in each step a player can move to any position until his oppostion's place. we can assume this as our size of the pile .  and apply xor similarly.
 
 
+##Solution 1187 :
+	
+	category : segment trees.
+	suppose given array , 0 0 1 3 0 5 . now the last guy says there are
+	exactly 5 guys taller than him . so he must be 6 -5 = 1 .
+	take an another array 1 2 3 4 5 6 ,and remove 1 from this . 
+	new array : 2 3 4 5 6
+	next ,the second last guy says there is no one greater than him ,so
+	he must be 6 , remove this from array .
+	new array : 2 3 4 5
+	then the next guy says there are 3 guys taller , so he must be 2.
+	then delete 2  , new array : 3 4 5 ...
+	similarily ..continue further ...
+
+	i used segment tree to construct the array and to delete each element
+	one by one.
+
+
 
 ##Solution 1233 :
 
