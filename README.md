@@ -470,6 +470,16 @@ and continue the loop ,till we find n as odd number.
 	one by one.
 
 
+##Solution 1189 :
+
+	As the time limit is too low 0.5 sec,if we do bitmasking , it will 
+	be timeout .
+	if we observe carefully ,
+	fact[n] > fact[n-1]  + fact[n-2] + ..... fact[1] + fact[0].
+	which means , if , k > fact[n] , and if k is a valid solution , then
+	k must contain fact[n] .
+	so just we need a single recursive call instead of double call inside 
+	the recursive function.
 
 ##Solution 1233 :
 
