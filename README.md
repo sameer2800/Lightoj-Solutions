@@ -494,6 +494,11 @@ and continue the loop ,till we find n as odd number.
 	so we can reformulize our equation ,
 	dp[n][k] = dp[n-1][k] - dp[n-1-m][k-1] + dp[n-1][k-1] .
 
+##Solution 1192 :
+
+	category : nim game
+	this is almost similar to problem no : 1186.
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
