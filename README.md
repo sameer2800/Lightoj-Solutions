@@ -499,6 +499,19 @@ and continue the loop ,till we find n as odd number.
 	category : nim game
 	this is almost similar to problem no : 1186.
 
+##Solution 1193 :
+
+	category : dynamic programming
+
+	dp[i][j] = 1*dp[i-1][j-1] + 2*dp[i-1][j-2] ..... k*dp[i-1][j-k]
+
+  dp[i-1][j] =                  1*dp[i-1][j-2] ......k-1*dp[i-1][j-k]+  
+                                 k *dp[i-1][j-k-1];
+
+    dp[i][j] = dp[i-1][j] + (dp[i-1][j-1] +   dp[i-1][j-2] ...)
+    
+    see the solution for better understanding.            
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
