@@ -481,6 +481,19 @@ and continue the loop ,till we find n as odd number.
 	so just we need a single recursive call instead of double call inside 
 	the recursive function.
 
+##Solution 1191 :
+	
+	category : dynamic programming .
+
+	build the dp table yourself to get the recurrence.
+	dp[n][k][m] = dp[n-1][k-1][m] + dp[n-2][k-1][m] +... dp[n-m][k-1][m]
+
+	here m is not varying, so we can safely remove third dimension m.
+	and dp[n-1][k][m] = dp[n-2][k-1][m] + dp[n-3][k-1][m] +....
+
+	so we can reformulize our equation ,
+	dp[n][k] = dp[n-1][k] - dp[n-1-m][k-1] + dp[n-1][k-1] .
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
