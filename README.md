@@ -516,6 +516,20 @@ and continue the loop ,till we find n as odd number.
 
 	greedy.
 
+##Solution 1199 :
+
+	sprague grundy numbers.
+
+	find grundy number for all the heap sizes.
+
+	grundy value of non movable states are 0.
+	generally, g[0] = 0 .
+
+	g[i] =  minimum number which is not present in the set of all the
+	grundy numbers where 'i' can move into.
+
+	answer will be g[n1] ^ g[n2] ^ g[n3] ....		
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
