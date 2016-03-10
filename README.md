@@ -512,6 +512,10 @@ and continue the loop ,till we find n as odd number.
     
     see the solution for better understanding.            
 
+##Solution 1198 :
+
+	greedy.
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
