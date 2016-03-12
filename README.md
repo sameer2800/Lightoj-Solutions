@@ -545,6 +545,16 @@ and continue the loop ,till we find n as odd number.
 
 	memoize steps to avoid recalculations.
 
+##Solution 1201 :
+
+	category : bfs
+
+	traverse the tree from any node and color that node with 0 and
+	color all the edges of zero color with 1 . vice versa 
+
+	answer will be max of number of color 0 and color 1 nodes. 
+	note : there can be many trees .
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
