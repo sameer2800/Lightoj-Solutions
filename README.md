@@ -530,6 +530,21 @@ and continue the loop ,till we find n as odd number.
 
 	answer will be g[n1] ^ g[n2] ^ g[n3] ....		
 
+##Solution 1200 :
+
+	category : Dynamic Programming
+
+	for a weight w, u can keep any object inside the sack whose weight
+	is lesser than w.
+	the profit obtained is p[i] for ith object.
+
+	func(weight) = maximum profit obtained when the sack size is w.
+
+	programmatically,  
+	func(weight) =   MAX  p[i] + func(weight- weig[i]); 
+
+	memoize steps to avoid recalculations.
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
