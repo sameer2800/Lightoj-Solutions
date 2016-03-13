@@ -4,53 +4,58 @@
 
 using namespace std;
 
-vector <ll> v[1010];
-ll color[1010];
-ll mark[1010];
+vector <ll > v[10100];
+ll dp[10100][2];
+ll mark[10100];
 
-ll n;
-
-ll bfs(ll cur)
+ll func(ll cur, ll taken, ll parent)
 {
-	ll countr[2];
-	memset(countr, 0, sizeof countr);
-	color[cur] = 0;
-	countr[color[cur]]++;
-	queue <ll> q;
-	q.push(cur);
+	mark[cur] = 1;
 
-	while (!q.empty()) {
-		ll elem = q.front();
-		q.pop();
-		mark[elem] = 1;
+	if (v[cur].size() == 0) {
+		if (taken == 1)
+			return 1;
+		else
+			return 0;
+	}
 
-		for (int i = 0; i < v[elem].size(); i++) {
-			ll loc = v[elem][i];
+	if (dp[cur][taken] != -1)
+		return dp[cur][taken];
 
-			if (mark[loc] != 1) {
-				color[loc] = color[elem] ^ 1;
-				countr[color[loc]]++;
-				q.push(loc);
+	ll ans = taken;
+
+	for (int i = 0; i < v[cur].size(); i++) {
+		ll elem = v[cur][i];
+
+		if (elem != parent) {
+			if (taken == 1) {
+				ans += func(elem, 0, cur);
+
+			} else {
+				ans += max(func(elem, 0, cur) , func(elem, 1, cur));
 			}
 		}
 	}
 
-	return max(countr[0], countr[1]);
+	return dp[cur][taken] = ans;
 }
+
+
+
 int main()
 {
 #ifndef ONLINE_JUDGE
 	freopen("/home/sameer/Documents/sameer/input.sam", "r", stdin);
 #endif
 	ios_base::sync_with_stdio(false);
-	ll i, j, k,  m, t, cont, a, b;
+	ll i, j, k, n, m, t, cont, a, b;
 	cin >> t;
 	ll cases = t;
 
 	while (t--) {
 		cin >> n >> m;
 		memset(mark, 0, sizeof mark);
-		memset(color, -1, sizeof color);
+		memset(dp, -1, sizeof dp);
 
 		for (i = 1; i <= n; i++)
 			v[i].clear();
@@ -64,9 +69,9 @@ int main()
 		ll ans = 0;
 
 		for (i = 1; i <= n; i++) {
-			if (mark[i] == 0 and v[i].size() != 0) {
+			if (mark[i] == 0 ) {
 				//	cout << "hel";
-				ans += bfs(i);
+				ans += max( func(i, 0, -1) , func(i, 1, -1));
 			}
 		}
 
