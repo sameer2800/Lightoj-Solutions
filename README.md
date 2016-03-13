@@ -547,13 +547,21 @@ and continue the loop ,till we find n as odd number.
 
 ##Solution 1201 :
 
-	category : bfs
+	category : dynamic programming .
 
-	traverse the tree from any node and color that node with 0 and
-	color all the edges of zero color with 1 . vice versa 
+	when i saw the problem first, i thought this is a simple coloring
+	problem . i coded in that manner , i got wrong answer . I opened
+	the forum and read some posts and realized this is not that simple as
+	just color the nodes and count .
 
-	answer will be max of number of color 0 and color 1 nodes. 
-	note : there can be many trees .
+	I solved this by using DP and we can also solve through bipartite
+	matching.
+
+	the key idea is => if a node present in the solution , all of its
+	neighbours shouldn't , and if a node is not present , all of its neighb
+	ours may or may present in the solution .
+
+	find out recurrence for the above idea and memoize it .that simple.		
 
 ##Solution 1233 :
 
