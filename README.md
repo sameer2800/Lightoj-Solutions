@@ -570,6 +570,22 @@ and continue the loop ,till we find n as odd number.
 	there can be only 3 solutions possible ,
 	1,2,impossible .
 
+##Solution 1205 :
+
+	category : dynamic programming 
+
+	inspired from this stackoverflow answer :p
+	http://stackoverflow.com/questions/22394257/how-to-count-integers-between-large-a-and-b-with-a-certain-property/22394258#22394258
+
+	the solution in the above link , he  counts only number of palindromic
+	integers which are of same size of given Y and <= to Y .
+	
+	So , I used almost same function and precomputed count of  palindromic
+	integers for all the sizes lesser than 22. 
+
+	and the answer is F(b) - F(a-1). 
+
+	note : be careful with corner cases.
 
 ##Solution 1233 :
 
