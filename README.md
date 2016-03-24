@@ -587,6 +587,16 @@ and continue the loop ,till we find n as odd number.
 
 	note : be careful with corner cases.
 
+##Solution 1207 :
+	
+	category : segment trees/lazy
+	
+	for all the given posters, update the range of the poster with a new color .
+	
+	after all posters done , query the color of each position of the wall ,
+	and count the unique colors which is our answer.
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
