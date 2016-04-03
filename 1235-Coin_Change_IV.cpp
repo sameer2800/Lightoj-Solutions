@@ -8,6 +8,7 @@ ll arr1[10], arr2[20];
 set <ll> set1;
 ll n, k;
 
+ll glob;
 void recursive_generate(ll val, ll ind)
 {
 	set1.insert(val);
