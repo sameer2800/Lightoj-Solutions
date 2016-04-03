@@ -750,6 +750,14 @@ and continue the loop ,till we find n as odd number.
 
 	basic level.	
 
+##Solution 1232 :
+	
+	category : dynamic programming
+
+	As time limits are very strict , we cannot write a recursive solution . 
+	Instead there is a iterative dp with time complexity O(N*k) and
+	space O(k)
+
 
 ##Solution 1233 :
 
