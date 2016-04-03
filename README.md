@@ -788,4 +788,13 @@ and continue the loop ,till we find n as odd number.
 
 	And queries also can be performed in similar manner .
 
+##Solution 1235 :
 
+	category : Bisection , binary search
+
+	Clearly we have 3^18 subsets which is order of 10 ^ 9. But we can solve
+	this through by the approach meet in the middle . 
+	divide the array into 2 groups each can be maximum size of 9. Now generate
+	all possible values of both groups which is 3^9 subsets. Now for every value
+	generated in set2 , find it corresponding value in set1 i.e (K-val) , if we
+	found this val, then the answer is YES.
