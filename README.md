@@ -705,6 +705,11 @@ and continue the loop ,till we find n as odd number.
 	then traverse the node  in a dfs manner, find the maximum value of heigh*countr.
 
 
+##Solution 1225 :
+
+	category : greedy
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
