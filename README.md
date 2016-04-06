@@ -646,6 +646,30 @@ and continue the loop ,till we find n as odd number.
 
 	the only thing we have to do is  find out the 'r' by using triangle equality. 
 
+
+##Solution 1217 :
+
+	category : dp
+
+	according to the conditions given in the qsn , either an element can be taken
+	or not. suppose , an element is taken , all the neighbours of it cannot be 
+	taken . so with this , we can easily find out a recursive solution .
+
+	dp(curr, taken , first) => curr is position , taken says whether it is present in the final answer, first is true if the first element is taken in the answer .
+
+	if(taken == 0)
+		we can  either take the next element or not .so, 2 conditions ,
+		 max ( dp(curr+1,1,first ) , dp(curr+1,0,first)
+
+	if(taken == 1)
+		then we cannot take the next element.
+		dp(curr+1,0,first)	 
+
+	Attribute first is used when we reach the last element .
+	
+	After this, use dp array for memoization  and return the answer if it is already
+	visited. 	
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
