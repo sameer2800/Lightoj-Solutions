@@ -624,6 +624,28 @@ and continue the loop ,till we find n as odd number.
 
 	f(n) = k * sum * n ^(k-1).
 
+
+##Solution 1214 :
+
+	category : division
+
+	as the number is too large, take it as a string.  
+
+##Solution 1215 :
+
+	category : number theory
+
+	brute force for all the factors of l and find the minimum factor which satisfies lcm of (a,b,factor) == l .  
+
+
+##Solution 1216 :
+
+	category : basic geometry
+
+	vol of truncated cone = 1/3 (pi*h*(r^2 + r2^2+ r*r2));
+
+	the only thing we have to do is  find out the 'r' by using triangle equality. 
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
