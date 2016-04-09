@@ -631,6 +631,13 @@ and continue the loop ,till we find n as odd number.
 
 	as the number is too large, take it as a string.  
 
+##Solution 1215 :
+
+	category : number theory
+
+	brute force for all the factors of l and find the minimum factor which satisfies lcm of (a,b,factor) == l .  
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
