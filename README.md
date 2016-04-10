@@ -624,6 +624,13 @@ and continue the loop ,till we find n as odd number.
 
 	f(n) = k * sum * n ^(k-1).
 
+
+##Solution 1214 :
+
+	category : division
+
+	as the number is too large, take it as a string.  
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
