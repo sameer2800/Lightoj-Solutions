@@ -608,12 +608,21 @@ and continue the loop ,till we find n as odd number.
 ##Solution 1210 :
 	category : scc
 
-##Solution 1211 :
+##Solution 1212 :
 	
 	category : data structures
 
 	use stl deque :p
 
+##Solution 1213 :
+
+	category : number theory
+
+	we could easily derive  the general formula if we write on a paper for each 
+	k = 1,2,3,4 (number of loops).
+	spoiler ahead.
+
+	f(n) = k * sum * n ^(k-1).
 
 ##Solution 1233 :
 
