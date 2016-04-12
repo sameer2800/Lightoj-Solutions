@@ -605,6 +605,16 @@ and continue the loop ,till we find n as odd number.
 
 >>>>>>> 1fd8274f824873a810f9e5dd5f9e7c966c9b9c61
 
+##Solution 1210 :
+	category : scc
+
+##Solution 1211 :
+	
+	category : data structures
+
+	use stl deque :p
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
