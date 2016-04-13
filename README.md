@@ -587,6 +587,12 @@ and continue the loop ,till we find n as odd number.
 
 	note : be careful with corner cases.
 
+##Solution 1210:
+
+	category : scc
+
+	
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
