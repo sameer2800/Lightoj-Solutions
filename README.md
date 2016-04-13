@@ -587,11 +587,23 @@ and continue the loop ,till we find n as odd number.
 
 	note : be careful with corner cases.
 
+<<<<<<< HEAD
 ##Solution 1210:
 
 	category : scc
 
 	
+=======
+##Solution 1207 :
+	
+	category : segment trees/lazy
+	
+	for all the given posters, update the range of the poster with a new color .
+	
+	after all posters done , query the color of each position of the wall ,
+	and count the unique colors which is our answer.
+
+>>>>>>> 1fd8274f824873a810f9e5dd5f9e7c966c9b9c61
 
 ##Solution 1233 :
 
