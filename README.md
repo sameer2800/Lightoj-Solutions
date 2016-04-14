@@ -684,6 +684,17 @@ and continue the loop ,till we find n as odd number.
 	each non perfect number , raise the power until the value lesser than 2^32
 	and store in map. similarly , go with negative numbers.  
 
+##Solution 1221 :
+
+	category : bellman ford, floyd warshall
+
+	Read the forum , it has very good explanation :D 
+
+	We can also find negative cycles by using floyd warshall. Run the floyd warshall
+	and then 
+	if edge[i][i] < 0
+		negative cycle exists. 
+
 
 ##Solution 1233 :
 
