@@ -696,6 +696,15 @@ and continue the loop ,till we find n as odd number.
 		negative cycle exists. 
 
 
+##Solution 1224 :
+
+	category : Trie tree
+
+	When you insert the string into the trie tree , increment the counter of the node.And also store the height of each node .
+
+	then traverse the node  in a dfs manner, find the maximum value of heigh*countr.
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
