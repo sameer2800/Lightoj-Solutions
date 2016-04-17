@@ -744,6 +744,13 @@ and continue the loop ,till we find n as odd number.
 	Along with this answer , we also need number of roads that recieve light from 
 	both nodes . this is readers assignment. :p 
 
+##Solution 1231 :
+
+	category : dynamic programming
+
+	basic level.	
+
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
