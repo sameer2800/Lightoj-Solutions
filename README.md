@@ -709,6 +709,9 @@ and continue the loop ,till we find n as odd number.
 
 	category : greedy
 
+##Solution 1227 :
+
+	category : greedy
 
 ##Solution 1233 :
 
