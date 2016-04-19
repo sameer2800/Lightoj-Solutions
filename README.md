@@ -713,6 +713,12 @@ and continue the loop ,till we find n as odd number.
 
 	category : greedy
 
+##Solution 1229 :
+
+	category : sprague grundy thereom
+
+	explanation : http://lbv-pc.blogspot.in/2012/07/treblecross.html
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
