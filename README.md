@@ -719,6 +719,31 @@ and continue the loop ,till we find n as odd number.
 
 	explanation : http://lbv-pc.blogspot.in/2012/07/treblecross.html
 
+##Solution 1230 :
+
+	category : dynamic programming
+
+	This problem is interesting as it is dp on a tree rather than normal array
+	dps. lets go to explanation .
+
+	dp[node][1] = number of nodes to be lightened in the subtree of 'node' when 
+				there is a lamppost in current node .
+
+	dp[node][0] = this is same as above but there is no lampost in current node.
+	
+	Now, the value at dp[node][0] will be , as this node does not contain lampposts
+	all its neighbours must contain lamps. which is
+	dp[node][0]  +=   dp[neighbour][1].
+
+	but when we keep a lamp in current node , we may or may not be required to keep
+	lamps in all of its neighbours. So , in this case we consider min of conditions.
+	which is
+
+	dp[node][1]  = min(dp[neighbour][0] , dp[neighbour][1] )
+
+	Along with this answer , we also need number of roads that recieve light from 
+	both nodes . this is readers assignment. :p 
+
 ##Solution 1233 :
 
 	this one is a good dp problem.I  Built the solution from bottom up manner.
