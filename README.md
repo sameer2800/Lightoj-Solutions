@@ -775,3 +775,17 @@ and continue the loop ,till we find n as odd number.
 
 	iterate the array in similar fashion for each coin.		
 
+##Solution 1234 :
+	
+	category: Number theory
+
+	we cannot have an double array of size 10^8 coz its memory is greater than
+	32 mb . instead we can have array of size 10^6.
+	In every node of array , store sum of 100 harmonic numbers along with arr[n-1].
+
+	so arr[1]  contains 1/1 + .... 1/100
+	and arr[2] = arr[1] + 1/101 +1/102 + .... 1/200
+
+	And queries also can be performed in similar manner .
+
+
