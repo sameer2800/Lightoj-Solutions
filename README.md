@@ -798,3 +798,10 @@ and continue the loop ,till we find n as odd number.
 	all possible values of both groups which is 3^9 subsets. Now for every value
 	generated in set2 , find it corresponding value in set1 i.e (K-val) , if we
 	found this val, then the answer is YES.
+
+##Solution 1341 :
+
+	category : Number theory
+
+	This problem is equivalent to counting the number of divisors of a that are strictly smaller than sqrt(a) and larger or equal than b.
+	The solution generates all the divisors of a that are smaller than sqrt(a) and counts how many are larger or equal than b. The divisors can be generated efficiently after first finding the prime factorization of a.
