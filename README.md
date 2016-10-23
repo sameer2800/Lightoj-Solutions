@@ -1,5 +1,15 @@
 #lightoj-epic-solutions
 
+##solution 1001 :
+
+its just a beginners problem of dividing the given number of items into two seperate baskets which can contain maximum of 10 elements.
+so, just by using if (n > 10) we can divide them into two baskets.
+
+##solution 1006 :
+
+Basically in this qestion we have to optimize the code and make it efficient, We can clearly observer that the given problem has overlapping subproblems ie ( fn(n-1) + fn(n-2) + fn(n-3) + fn(n-4) + fn(n-5) + fn(n-6) ), so we can use dynamic programming for solving this.
+we can use an array to store the already computed values and can be used for calculation of new values.
+
 ##solution 1007 :
 
 based  on  Euler totient function.
