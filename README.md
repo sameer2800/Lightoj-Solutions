@@ -1,5 +1,17 @@
 #lightoj-epic-solutions
 
+##solution 1002 :
+
+The problem description is very straightforward. The solution is achieved
+with a simple Dijkstra with a simple modification: 
+
+Instead of returning the value of the shortest path itself, the algorithm should 
+return the maximum weight along the shortest path.
+
+The Dijkstra algorithm should be used only once every input case, because after doing so, 
+the output values are stored in the distance array. So it is not necessary to 
+call it for every vertex in the graph.
+
 ##solution 1007 :
 
 based  on  Euler totient function.
