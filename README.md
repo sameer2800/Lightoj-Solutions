@@ -9,6 +9,7 @@ we just need to use if else or switch case according to the given queries and co
 ##solution 1000 :
 
 Simple addition program.
+
 For given number of problems in each of the computers, we have to find the total number of problems
 
 
