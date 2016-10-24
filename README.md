@@ -1,5 +1,12 @@
 #lightoj-epic-solutions
 
+##solution 1000 :
+
+Simple addition program.
+For given number of problems in each of the computers, we have to find the total number of problems
+
+
+
 ##solution 1007 :
 
 based  on  Euler totient function.
@@ -28,6 +35,23 @@ if bob takes first : 1 2 3 4 5 6 7 8 9
 
 W - stands for winning , L stands for loosing and number represents 
 number of marbles present.
+
+
+##solution 1053 :
+
+A simple problem based on Pythagorean theorem. Pythagoras's theorem, is a fundamental relation in Euclidean geometry among the three sides of a right triangle. It states that the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+ 
+hypo ^ 2 =  side ^ 2 + side ^2
+
+hypotenuse is larger than other two sides. In given 3 sides we can find maximum number and we can say that thoes are righttriangle sides or not by checking above theorm.
+
+
+##solution 1069:
+
+A simple problem based on addition , substration , multiplication operations. 
+	
+We'll be calculating whole traveling time of the lift after that adding to total operations time. 
+
 
 
 ##solution 1078 :
