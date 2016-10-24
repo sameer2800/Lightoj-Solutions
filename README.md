@@ -52,6 +52,9 @@ if bob takes first : 1 2 3 4 5 6 7 8 9
 W - stands for winning , L stands for loosing and number represents 
 number of marbles present.
 
+##solution 1053 :
+We just need to check the pythogras theroem ie a^2 + b^2 = c^2.
+
 
 ##solution 1078 :
 
