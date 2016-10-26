@@ -1,5 +1,10 @@
 #lightoj-epic-solutions
 
+##solution 1133 :
+
+we just need to use if else or switch case according to the given queries and compute the values.
+
+
 ##solution 1001 :
 
 its just a beginners problem of dividing the given number of items into two seperate baskets which can contain maximum of 10 elements.
