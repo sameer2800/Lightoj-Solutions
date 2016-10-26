@@ -105,6 +105,10 @@ dp[i] = min(dp[i],1+ dp[j])
 
 check the solution for better understanding.
 
+##solution 1107 :
+
+Just Check wheter the given input point satisfies the condition ((x3 > x1 && x3 < x2) && (y3 > y1 && y3 < y2))
+
 
 ##solution 1113 :
 
