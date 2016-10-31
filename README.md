@@ -1,8 +1,13 @@
 #lightoj-epic-solutions
 
-##solution 1133 :
 
-we just need to use if else or switch case according to the given queries and compute the values.
+
+##solution 1000 :
+
+Simple addition program.
+
+For given number of problems in each of the computers, we have to find the total number of problems
+
 
 
 ##solution 1001 :
@@ -27,6 +32,8 @@ call it for every vertex in the graph.
 Basically in this qestion we have to optimize the code and make it efficient, We can clearly observer that the given problem has overlapping subproblems ie ( fn(n-1) + fn(n-2) + fn(n-3) + fn(n-4) + fn(n-5) + fn(n-6) ), so we can use dynamic programming for solving this.
 we can use an array to store the already computed values and can be used for calculation of new values.
 
+=======
+>>>>>>> a2ee7631fcb08c189b7f22bcbeae5d82f6f53fb6
 
 ##solution 1007 :
 
@@ -59,6 +66,40 @@ number of marbles present.
 
 ##solution 1053 :
 We just need to check the pythogras theroem ie a^2 + b^2 = c^2.
+
+
+##solution 1053 :
+
+A simple problem based on Pythagorean theorem. Pythagoras's theorem, is a fundamental relation in Euclidean geometry among the three sides of a right triangle. It states that the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+ 
+hypo ^ 2 =  side ^ 2 + side ^2
+
+hypotenuse is larger than other two sides. In given 3 sides we can find maximum number and we can say that thoes are righttriangle sides or not by checking above theorm.
+
+
+##solution 1069:
+
+A simple problem based on addition , substration , multiplication operations. 
+	
+We'll be calculating whole traveling time of the lift after that adding to total operations time. 
+
+
+
+##solution 1053 :
+
+A simple problem based on Pythagorean theorem. Pythagoras's theorem, is a fundamental relation in Euclidean geometry among the three sides of a right triangle. It states that the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+ 
+hypo ^ 2 =  side ^ 2 + side ^2
+
+hypotenuse is larger than other two sides. In given 3 sides we can find maximum number and we can say that thoes are righttriangle sides or not by checking above theorm.
+
+
+##solution 1069:
+
+A simple problem based on addition , substration , multiplication operations. 
+	
+We'll be calculating whole traveling time of the lift after that adding to total operations time. 
+
 
 
 ##solution 1078 :
@@ -245,6 +286,12 @@ and continue the loop ,till we find n as odd number.
 
 		Matrix power can be done in log(n) time.
 		So complexity will be ((M.rows)^3 )*log(n).
+
+
+##solution 1133 :
+
+we just need to use if else or switch case according to the given queries and compute the values.
+
 
 ##Solution 1134 :
 	
