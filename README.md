@@ -881,6 +881,12 @@ we just need to use if else or switch case according to the given queries and co
 	generated in set2 , find it corresponding value in set1 i.e (K-val) , if we
 	found this val, then the answer is YES.
 
+##Solution 1324 :
+
+	category : Grammar, brute force
+
+	This problem asks you to test whether two boolean expressions are equivalent. There are only 10 different boolean variables, evaluate and compare the 2 expressions for each of the 2^10 possible assignments.
+
 ##Solution 1341 :
 
 	category : Number theory
